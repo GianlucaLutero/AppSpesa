@@ -1,0 +1,19 @@
+Classi necessarie:
+
+Spesa
+- Totale
+- Partecipanti
+- Numero Partecipanti
+- QuotaCadauno
+
+Partecipante
+- Id
+- QuotaVersata
+- QuotadaVersare
+- QuotadaRicevere
+- Stato 
+	- Creditore
+	- Debitore
+	- Saldato
+
+
