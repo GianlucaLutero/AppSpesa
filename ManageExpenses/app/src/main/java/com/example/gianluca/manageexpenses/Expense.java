@@ -7,7 +7,9 @@ package com.example.gianluca.manageexpenses;
 
 
 public class Expense {
-
+    
+    private String expenseName;
+    private String expenseType;
     private double sum;
     private int number_of_participants;
     private Participant[] participant_list;
@@ -24,7 +26,7 @@ public class Expense {
     public double getSum() {
         return sum;
     }
-
+    
     public void setSum(double sum) {
         this.sum = sum;
     }
