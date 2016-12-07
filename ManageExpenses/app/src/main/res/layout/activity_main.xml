@@ -14,40 +14,8 @@
         android:text="Add Expense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="105dp"
-        android:id="@+id/addExpense" />
+        android:id="@+id/addExpense"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/editName"
-        android:layout_above="@+id/addExpense"
-        android:layout_alignStart="@+id/editNumberParticipants"
-        android:layout_marginBottom="77dp"
-        android:hint="Name" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/editNumberParticipants"
-        android:layout_above="@+id/editName"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="34dp"
-        android:hint="Sum" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/editSum"
-        android:layout_above="@+id/editNumberParticipants"
-        android:layout_alignStart="@+id/editNumberParticipants"
-        android:hint="Number of participants" />
 </RelativeLayout>
