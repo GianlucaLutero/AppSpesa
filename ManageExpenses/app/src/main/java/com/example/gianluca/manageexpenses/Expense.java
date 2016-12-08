@@ -1,5 +1,7 @@
 package com.example.gianluca.manageexpenses;
 
+import java.util.ArrayList;
+
 /**
  * Created by gianluca on 05/12/16.
  */
@@ -12,14 +14,17 @@ public class Expense {
     private String expenseType;
     private double sum;
     private int numberParticipants;
-    private Participant[] participantList;
+    private ArrayList<Participant> participantList;
 
     public Expense(double new_sum,int new_number_of_participants){
 
         sum = new_sum;
         numberParticipants=new_number_of_participants;
-        participantList= new Participant[new_number_of_participants];
+        participantList= new ArrayList<Participant>(new_number_of_participants);
 
+        for(int i=0;i<new_number_of_participants-1;i++){
+            participantList.add(i, new Participant(1, "Name", "Surname", new_sum / new_number_of_participants));
+        }
     }
 
 

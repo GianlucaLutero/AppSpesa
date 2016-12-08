@@ -7,11 +7,14 @@ package com.example.gianluca.manageexpenses;
 public class ExpenseOperations {
 
 
-    public static double divide(int dividendo,int divisore){
+
+
+    public static double divide(double dividendo,double divisore){
 
         return dividendo/divisore;
 
     }
+
 
 
 }
