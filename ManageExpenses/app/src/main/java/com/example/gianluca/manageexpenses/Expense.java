@@ -23,7 +23,7 @@ public class Expense {
         participantList= new ArrayList<Participant>(new_number_of_participants);
 
         for(int i=0;i<new_number_of_participants-1;i++){
-            participantList.add(i, new Participant(1, "Name", "Surname", new_sum / new_number_of_participants));
+            participantList.add(i, new Participant(1, "Name", "Surname"));
         }
     }
 

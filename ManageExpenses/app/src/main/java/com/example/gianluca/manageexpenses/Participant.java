@@ -15,12 +15,12 @@ public class Participant {
     private State state;
 
 
-    public Participant(int new_ID,String new_name,String new_surname,double new_share_each){
+    public Participant(int new_ID,String new_name,String new_surname){
 
         ID=new_ID;
         name=new_name;
         surname=new_surname;
-        share_each=new_share_each;
+        share_each=0;
         state=NEUTRAL;
     }
 
@@ -57,4 +57,11 @@ public class Participant {
     }
 
 
+    public State getState() {
+        return state;
+    }
+
+    public void setState(State state) {
+        this.state = state;
+    }
 }

@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final Button addExpense = (Button) findViewById(R.id.addExpense);
+        final Button addPartecipant = (Button) findViewById(R.id.addPartecipant);
 
         addExpense.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -23,7 +24,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        addPartecipant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,AddPartecipantActivity.class));
+            }
+        });
 
     }
 }
